@@ -10,7 +10,7 @@ class PegGame:
         self.remaining_move = self.size * (self.size + 1) // 2 - 1
         self.board = self.create_board()
         self.total_of_ones = deque()
-        self.min_size = 2
+        
 
     def create_board(self):
             return [[1] * (i) for i in range(1, self.size + 1)]
