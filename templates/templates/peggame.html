@@ -35,24 +35,45 @@
         .selected {
             background-color: red !important;
         }
+        #remaining-moves{
+            font-size: larger;
+        }
 
         #game_rules{
             color: red;
-            padding: 10%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: larger;
+           
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size:larger;
 
+        }
+
+         li{
+            text-decoration: none;
+            color: black;
+            size: 6rem;
+        }
+        ul{
+
+            list-style: none;
         }
     </style>
 </head>
 <body>
     <h1>Peg Game</h1>
-   <divid="game_rules">Board Size: You can specify the board size (greater than 2) to set up the game.
-    Starting Position: Select a peg you want to remove as the starting position.
-    Move Peg: Once the starting position is set, click on a peg to select it, then click on the empty space to move it.
-    Winning Condition: The game checks for a win automatically after each move. If you win, it will display a congratulatory message. If no valid moves remain, the game ends.</div>div>
+   <divid="game_rules">
+    <ul>
+        
+        <li><b>Board Size:</b> You can specify the board size (greater than 2) to set up the game.</li>
+        <li> <b>Starting Position:</b> Select a peg you want to remove as the starting position.</li>
+        <li><b>Move Peg:</b> Once the starting position is set, click on a peg to select it, then click on the empty space to move it.</li>
+        <li><b>Winning Condition:</b> The game checks for a win automatically after each move. If you win, it will display a congratulatory message. If no valid moves remain, the game ends</li>
+    </ul>
+
+</div>
+   
+   
     <div id="remaining-moves"> </div>
-    <h1 class="starting_peg">Select the Peg you would like to remove</h1>
+    <h1 class="starting_peg">Please select a staring position</h1>
     <div id="win-message" style="color: red; font-size: 20px;"></div>
     <input type="number" id="board-size" placeholder="Enter board size" min="3" style="margin-top: 20px; padding: 10px; font-size: 16px;" />
     
@@ -105,6 +126,7 @@
         });
 
         if (response.ok) {
+            const message = document.querySelector(".starting_peg").innerHTML= "Please select a staring position"
             document.getElementById("win-message").textContent = ""; // Clear win message
             startingPositionSet = false; // Reset game state
             fetchBoard(); // Reload board
