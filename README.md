@@ -13,7 +13,7 @@ bash Copy Edit
 pip install -r requirements.txt
 Running the Project
 Clone the repository to your local machine.
-git clone https://github.com//peggame
+git clone https://github.com/your_user_name/peggame
 
 Install the required dependencies:
 
