@@ -1,32 +1,27 @@
-This project is a web-based Peg game using Flask as the backend framework. The game lets you manipulate pegs on a board and includes features like setting the board size, choosing the starting position, and moving pegs.
+This project is a web-based Peg game using Flask as the backend framework. 
+The game lets you manipulate pegs on a board and includes features like setting the board size, choosing the starting position, and moving pegs.
 
 Requirements
 Make sure to have the following Python libraries installed to run the project:
 
-bash
-Copy
-Edit
+bash Copy Edit
 Flask==2.1.1
-You can install the dependencies using the requirements.txt file:
+You can install the dependencies using the 
+requirements.txt file:
 
-bash
-Copy
-Edit
+bash Copy Edit
 pip install -r requirements.txt
 Running the Project
 Clone the repository to your local machine.
+git clone https://github.com//peggame
 
 Install the required dependencies:
 
-bash
-Copy
-Edit
+bash Copy Edit
 pip install -r requirements.txt
 Run the Flask application:
 
-bash
-Copy
-Edit
+bash Copy Edit
 python app.py
 Open your browser and go to http://127.0.0.1:5000/ to play the game.
 
@@ -56,10 +51,7 @@ Test Valid Move: Tests valid moves to ensure the game behaves correctly when peg
 Test Win Condition: The game checks if there is exactly one peg left on the board and declares the player as the winner.
 Test Invalid Move: Verifies that invalid moves are rejected.
 
-Example Test Script:
-python
-Copy
-Edit
+Example Test Script: python Copy Edit
 import unittest
 from app import PegGame
 
@@ -103,9 +95,7 @@ Install unittest if you don't have it (it’s included by default in Python, so 
 
 Run the test script using:
 
-bash
-Copy
-Edit
+bash Copy Edit
 python -m unittest tests/test_game.py
 Review the results to ensure everything works correctly.
 
