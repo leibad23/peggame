@@ -36,6 +36,7 @@ Board Size: You can specify the board size (greater than 2) to set up the game.
 Starting Position: Select a peg you want to remove as the starting position.
 Move Peg: Once the starting position is set, click on a peg to select it, then click on the empty space to move it.
 Winning Condition: The game checks for a win automatically after each move. If you win, it will display a congratulatory message. If no valid moves remain, the game ends.
+
 Endpoints:
 /: Home page
 /get_board: Fetches the current game board and remaining moves.
@@ -54,6 +55,7 @@ Test Board Creation: It verifies that the board is correctly created based on th
 Test Valid Move: Tests valid moves to ensure the game behaves correctly when pegs are moved.
 Test Win Condition: The game checks if there is exactly one peg left on the board and declares the player as the winner.
 Test Invalid Move: Verifies that invalid moves are rejected.
+
 Example Test Script:
 python
 Copy
